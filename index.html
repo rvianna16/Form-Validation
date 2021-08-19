@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Lorem - Form UI</title>
+  </head>
+  <body>
+    <header id="header" class="p-4">
+      <nav class="navbar navbar-expand-md navbar-dark container">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-logo" href="index.html">lorem</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Nossa História</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="
+                    nav-link
+                    text-light
+                    fw-bold
+                    btn btn-purple
+                    mt-md-0 mt-2
+                    ms-md-2
+                    px-4
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalLogin"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section id="main" class="position-relative">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-8">
+            <h1 style="font-size: 3rem" class="fw-bold">
+              Lorem ipsum diam habitant massa euismod donec per ligula, viverra
+              hac nam facilisis
+              <span style="color: var(--primary-color)"
+                >curabitur torquent.</span
+              >
+            </h1>
+            <p style="color: var(--text-color)" class="h3 py-4">
+              Lorem ipsum lacinia hendrerit suscipit sed, venenatis urna justo
+              diam cubilia.
+            </p>
+            <div class="call">
+              <a class="btn btn-white disabled">Saiba Mais</a>
+              <a href="form.html" class="btn btn-purple--dark ms-sm-4 ms-3"
+                >Cadastre-se</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="main-img position-absolute top-0 end-0 d-none d-md-block"
+      ></div>
+    </section>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Efetue o seu Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputLogin" class="form-label">Usuário</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLogin"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-dark fw-bold">Entrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-text fw-bold">Não possui uma conta?</div>
+            <a href="form.html" class="btn btn-purple fw-bold"> Cadastre-se </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <script src="bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/form.css" />
+    <title>Lorem - Form Validation</title>
+  </head>
+  <body>
+    <header id="header" class="p-4">
+      <nav class="navbar navbar-expand-md navbar-dark container">
+        <div class="container-fluid">
+          <a class="navbar-brand navbar-logo" href="index.html">lorem</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Nossa História</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Blog</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light fw-bold mt-md-0 mt-2" href="#"
+                  >Serviços</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="
+                    nav-link
+                    text-light
+                    fw-bold
+                    btn btn-purple
+                    mt-md-0 mt-2
+                    ms-md-2
+                    px-4
+                  "
+                  data-bs-toggle="modal"
+                  data-bs-target="#modalLogin"
+                  href="#"
+                  >Login</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <lottie-player
+      src="https://assets6.lottiefiles.com/packages/lf20_88eq9kd8.json"
+      class="container position-absolute d-none d-lg-block"
+      background="transparent"
+      speed="1"
+      style="width: 200px; height: 300px"
+      loop
+      autoplay
+    ></lottie-player>
+
+    <section id="signup" class="text-center">
+      <h1 style="font-size: 3rem" class="fw-bold">Efetue o seu cadastro</h1>
+      <p style="color: var(--text-color)" class="h3 pt-3 pb-5">
+        Lorem ipsum sapien elementum, arcu etiam, facilisis curabitur.
+      </p>
+
+      <div id="form-stage" class="d-flex justify-content-center py-4">
+        <div class="stage contact text-start">
+          <p class="fw-bold mb-0">1. Dados de Contato</p>
+        </div>
+        <div class="stage address text-start ms-2 disabled">
+          <p class="fw-bold mb-0">2. Endereço</p>
+        </div>
+        <div class="stage credencials text-start ms-2 disabled">
+          <p class="fw-bold mb-0">3. Credenciais</p>
+        </div>
+      </div>
+
+      <div id="form-container">
+        <form id="contact">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="inputName" class="form-label">
+                Nome
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputName"
+                placeholder="Fulano"
+                required
+              />
+              <span class="error text-danger"></span>
+            </div>
+            <div class="col-md-6">
+              <label for="inputLastName" class="form-label">
+                Sobrenome
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputLastName"
+                placeholder="Silva"
+                required
+              />
+              <span class="error text-danger"></span>
+            </div>
+            <div class="col-8">
+              <label for="inputMail" class="form-label">
+                E-mail
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="email"
+                class="form-control"
+                id="inputMail"
+                placeholder="email@exemplo.com"
+                required
+              />
+              <span class="error text-danger"></span>
+            </div>
+            <div class="col-5">
+              <label for="inputDate" class="form-label">
+                Data de nascimento
+                <span class="text-danger">*</span>
+              </label>
+              <input type="date" class="form-control" id="inputDate" required />
+              <span class="error text-danger"></span>
+            </div>
+          </div>
+
+          <div class="row my-3">
+            <div class="col-6">
+              <label for="inputId" class="form-label">
+                CPF
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputId"
+                maxlength="14"
+                placeholder="000.000.000-00"
+                required
+              />
+              <span class="error text-danger"></span>
+            </div>
+          </div>
+
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="inputPhone" class="form-label">
+                Tel. Contato
+                <span class="text-danger">*</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputPhone"
+                maxlength="15"
+                placeholder="(00) 00000-0000"
+                required
+              />
+              <span class="error text-danger"></span>
+            </div>
+            <div class="col-md-6">
+              <label for="inputPhone2" class="form-label">
+                Tel. Contato - 2
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                id="inputPhone2"
+                placeholder="(00) 00000-0000"
+                maxlength="15"
+              />
+              <span class="error text-danger"></span>
+            </div>
+          </div>
+        </form>
+
+        <form id="address" class="row g-3 d-none">
+          <div class="col-md-3">
+            <label for="inputCep" class="form-label"> CEP </label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputCep"
+              maxlength="9"
+              placeholder="00000-000"
+              required
+            />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-md-9">
+            <label for="inputAddress" class="form-label">Endereço</label>
+            <input
+              name="endereco"
+              type="text"
+              class="form-control"
+              id="inputAddress"
+              disabled
+            />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-7">
+            <label for="inputDistrict" class="form-label">Bairro</label>
+            <input
+              type="text"
+              class="form-control"
+              id="inputDistrict"
+              disabled
+            />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-4">
+            <label for="inputAddress2" class="form-label">Complemento</label>
+            <input type="text" class="form-control" id="inputAddress2" />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">Cidade</label>
+            <input type="text" class="form-control" id="inputCity" disabled />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-md-5">
+            <label for="inputState" class="form-label">Estado</label>
+            <input type="text" class="form-control" id="inputState" disabled />
+            <span class="error text-danger"></span>
+          </div>
+        </form>
+
+        <form id="credencials" class="row g-3 d-none">
+          <div class="col-md-7">
+            <label for="inputUser" class="form-label">
+              Nome de usuário
+              <span class="text-danger">*</span>
+            </label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="usuario"
+              id="inputUser"
+              required
+            />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-md-7">
+            <label for="inputPass" class="form-label">
+              Senha
+              <span class="text-danger">*</span>
+            </label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPass"
+              placeholder="********"
+              required
+            />
+            <span class="error text-danger"></span>
+          </div>
+          <div class="col-7">
+            <label for="inputPass2" class="form-label">
+              Confirmar senha
+              <span class="text-danger">*</span>
+            </label>
+            <input
+              type="password"
+              class="form-control"
+              id="inputPass2"
+              placeholder="********"
+              required
+            />
+            <span class="error text-danger"></span>
+          </div>
+        </form>
+
+        <div class="d-flex justify-content-between align-items-center pt-5">
+          <p style="color: var(--text-color)" class="m-0">
+            <span class="text-danger">*</span>
+            Campos de preenchimento obrigatório
+          </p>
+
+          <div class="form-button">
+            <a id="prev" class="btn d-none">Voltar</a>
+            <a id="next" class="btn btn-purple fw-bold ms-4">Proxima Etapa</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- modal -->
+    <div
+      class="modal fade"
+      id="modalLogin"
+      tabindex="-1"
+      aria-labelledby="modalLoginLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Efetue o seu Login</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="inputLogin" class="form-label">Usuário</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="inputLogin"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="inputPassword" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="inputPassword"
+                  required
+                />
+              </div>
+              <button type="submit" class="btn btn-dark fw-bold">Entrar</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <div class="form-text fw-bold">Não possui uma conta?</div>
+            <a href="form.html" class="btn btn-purple fw-bold"> Cadastre-se </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- modal -->
+
+    <script src="bootstrap.bundle.js"></script>
+    <script src="script.js" type="module"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap');
+:root {
+  --light: #f8f9fa;
+  --primary-color: #8f40bf;
+  --title-color: #282536;
+  --text-color: #adadb2;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#header {
+  background-color: #252233;
+}
+
+#header .navbar-logo {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* btn */
+
+.btn-purple {
+  background-color: var(--primary-color);
+  color: var(--light);
+}
+
+.btn-purple:hover {
+  background-color: #7529a3;
+  color: var(--light);
+  transition: 1s;
+}
+
+.btn-purple:focus {
+  box-shadow: none;
+}
+
+/* main section */
+
+#main {
+  padding: 100px 0;
+}
+
+#main .btn-white,
+#main .btn-purple--dark {
+  width: 160px;
+  padding: 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  font-weight: bold;
+}
+
+#main .btn-white {
+  background: none;
+  border: 1px solid #dedede;
+  color: var(--title-color);
+}
+
+#main .btn-purple--dark {
+  background-color: #7529a3;
+  color: var(--light);
+}
+
+#main .main-img {
+  width: 650px;
+  height: 631px;
+  background: url(../img/undraw_lost_online.png);
+}
+
+@media screen and (max-width: 1200px) {
+  #main .main-img {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  #main .main-img {
+    width: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 13px;
+  }
+
+  #main {
+    padding: 50px 0;
+  }
+}
